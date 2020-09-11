@@ -43,18 +43,7 @@ describe("check build output for a generic post", () => {
       doc = dom.window.document;
     });
 
-    it("should have metadata", () => {
-      assert.equal(select("title"), "This is my first post.");
-      expect(select("meta[property='og:image']", "content")).to.match(
-        /\/img\/remote\/\w+.jpg/
-      );
-      assert.equal(select("link[rel='canonical']", "href"), POST_URL);
-      assert.equal(
-        select("meta[name='description']", "content"),
-        "This is a post on My Blog about agile frameworks."
-      );
-    });
-
+   
     it("should have inlined css", () => {
       const css = select("style");
       expect(css).to.match(/header nav/);
@@ -114,10 +103,7 @@ describe("check build output for a generic post", () => {
 
     
 
-    it("should have a published date", () => {
-      expect(select("article time")).to.equal("01 May 2018");
-      expect(select("article time", "datetime")).to.equal("2018-05-01");
-    });
+    
 
     it("should link to twitter with noopener", () => {
       const twitterLinks = Array.from(doc.querySelectorAll("a")).filter((a) =>
