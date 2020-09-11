@@ -10,6 +10,6 @@ layout: layouts/post.njk
 <a href="{{ 'https://github.com/shailooz/MLTraining/tree/master/Day-0%23%23GettingStarted' | url }}" target="_blank">Exercices(Github)</a>
 
 ### Tools Needed
- - Anaconda - https://repo.anaconda.com/archive/Anaconda3-2020.07-Windows-x86_64.exe
- - Notepad++ - https://notepad-plus-plus.org/downloads/
- - VSCode - https://code.visualstudio.com/
+- <a href="{{ 'https://repo.anaconda.com/archive/Anaconda3-2020.07-Windows-x86_64.exe' | url }}" target="_blank">Anaconda</a>
+- <a href="{{ 'https://notepad-plus-plus.org/downloads/' | url }}" target="_blank">Notepad++</a>
+- <a href="{{ 'https://code.visualstudio.com/' | url }}" target="_blank">VSCode</a>
